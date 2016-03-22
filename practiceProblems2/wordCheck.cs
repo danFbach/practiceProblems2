@@ -13,8 +13,7 @@ namespace practiceProblems2
         public void getNewWord()
         {
             Console.WriteLine("Please enter a word.");
-            userInput = Console.ReadLine();
-
+            userInput = Console.ReadLine();                    
         }
 
         public void checkWord()

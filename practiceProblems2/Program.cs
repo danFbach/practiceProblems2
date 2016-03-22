@@ -10,12 +10,16 @@ namespace practiceProblems2
     {
         static void Main(string[] args)
         {
-            wordCheck check = new wordCheck();
-            while (true)
-            {
-                check.getNewWord();
-                check.checkWord();
-            }
+            //wordCheck check = new wordCheck();
+            //while (true)
+            //{
+            //    check.getNewWord();
+            //    check.checkWord();
+            //}
+
+            shapeMaker makeShape = new shapeMaker();
+            makeShape.square(5);
+            makeShape.printThis();
         }
     }
 }
