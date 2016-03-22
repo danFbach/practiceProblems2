@@ -15,14 +15,15 @@ namespace practiceProblems2
             for (int rowIndex = 0; rowIndex < dimensions; rowIndex++)
             {    
                 shape.Add(new List<string>());
-                for (int colIndex = 0; colIndex < rowIndex; colIndex++)
-                {
-                    shape[rowIndex].Add(" ");
-                }
-                for (int colIndex = 6; colIndex > rowIndex+1; colIndex--)
+                for (int colIndex = 6; colIndex > rowIndex + 1; colIndex--)
                 {
                     shape[rowIndex].Add("*");
                 }
+                for (int colIndex = 1; colIndex < rowIndex; colIndex++)
+                {
+                    shape[rowIndex].Add(" ");
+                }
+                
             }
         }
         public void printThis()
