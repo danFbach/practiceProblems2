@@ -10,7 +10,7 @@ namespace practiceProblems2
     {
         static void Main(string[] args)
         {
-            //wordCheck check = new wordCheck();
+            wordCheck check = new wordCheck();
             //while (true)
             //{
             //    check.getNewWord();
@@ -18,8 +18,11 @@ namespace practiceProblems2
             //}
 
             shapeMaker makeShape = new shapeMaker();
-            makeShape.square(5);
+            makeShape.square(67);
             makeShape.printThis();
+
+            //fibbonacci run = new fibbonacci();
+            //run.sequence(5);
         }
     }
 }

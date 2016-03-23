@@ -14,8 +14,7 @@ namespace practiceProblems2
         {
             Console.WriteLine("Please enter a word.");
             userInput = Console.ReadLine();                    
-        }
-
+        }                   
         public void checkWord()
         {
             foreach(string word in listOfWords)
@@ -23,8 +22,7 @@ namespace practiceProblems2
                 if (userInput == word)
                 {
                     Console.WriteLine("BARK!");
-                }
-
+                }           
             }Console.WriteLine("Nice word dude.");
             listOfWords.Add(userInput);
         }
