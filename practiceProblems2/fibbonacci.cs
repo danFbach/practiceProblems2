@@ -7,19 +7,31 @@ using System.Threading.Tasks;
 namespace practiceProblems2
 {
     public class fibbonacci
+    {
+        List<double> fibs1 = new List<double>();
+        double currentNumber;
+        double tempNumber1 = 0;
+        double iterationLimit = 50;
+        public void sequence(double shift)
         {
-        List<int> fibs1 = new List<int>();
-        int tempNumber1 = 0;
-        int tempNumber2 = 0;
-        int tempResult;
-        public void sequence(int shift)
+            fibs1.Add(shift);
+            fibs1.Add(0);        
+            currentNumber = shift;
+            fibs1.Add(currentNumber);
+            for (int nextNum = 0; nextNum < iterationLimit; nextNum += 1)
+            {
+                tempNumber1 = currentNumber * 2;
+                tempNumber1 -= fibs1[nextNum];
+                fibs1.Add(tempNumber1);
+                currentNumber = tempNumber1;
+            }
+        }
+        public void printFibbbbb()
         {
-            tempNumber1 = shift;
-            for (int i = 0;i < 50;i += 5)
-            {                                         tempNumber1 = shift * 2;
-                fibs1.Add(tempNumber1);                                                                         
-                Console.WriteLine(" " + tempResult);
-            } Console.ReadKey();             
-        }                                 
+            foreach (double fib in fibs1)
+            {
+                Console.WriteLine(fib);
+            }                 
+        }
     }
-}        
+}                 
