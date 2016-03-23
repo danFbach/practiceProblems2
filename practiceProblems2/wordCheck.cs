@@ -18,28 +18,27 @@ namespace practiceProblems2
             userInput = userInput.ToLower();
             userInput = userInput.Trim();                   
         }                  
-        public void checkWord()
+        public string checkWord()
         {
             foreach(string word in listOfWords)
                 {
                 if (userInput == word)
                 {
                     Console.WriteLine("BARK!");
+                    Console.WriteLine("Would you like to contine checking words? (y/N)");
+                    proceed = Console.ReadLine();
+                    proceed = proceed.ToLower();
                 }           
             }Console.WriteLine("Nice word dude.");
             listOfWords.Add(userInput);
+            return proceed;
         }
         public void initiateWordCheck()
         {
             while (proceed.Equals("y"))
             {
                 getNewWord();
-                checkWord();
-                Console.WriteLine("Would you like to contine checking words? (Y/N)");
-                proceed = Console.ReadLine();
-                proceed = proceed.ToLower();
-                
-
+                checkWord();  
             }
         }
     }

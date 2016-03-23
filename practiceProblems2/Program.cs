@@ -10,21 +10,14 @@ namespace practiceProblems2
     {
         static void Main(string[] args)
         {
-            wordCheck checkStart = new wordCheck();
-            checkStart.initiateWordCheck();
-            
-
+            //wordCheck checkStart = new wordCheck();
+            //checkStart.initiateWordCheck();
 
             //shapeMaker makeShape = new shapeMaker();
-            //makeShape.square(25);
-            //makeShape.printThis();
-            //3 seperate functions
+            //makeShape.drawTriangles();
 
-            //fibbonacci run = new fibbonacci();
-            //run.sequence(6);
-            //run.printFibbbbb();
-            //Console.ReadKey();
-            //fix names
+            fibbonacci run = new fibbonacci();
+            run.newSequence();
         }
     }
 }

@@ -6,31 +6,52 @@ using System.Threading.Tasks;
 
 namespace practiceProblems2
 {
-    public class fibbonacci
+   public class fibbonacci
     {
-        List<double> fibs1 = new List<double>();
-        double currentNumber;
-        double tempNumber1 = 0;
-        double iterationLimit = 50;
-        public void sequence(double shift)
+        public List<double> fibbonacciSequence = new List<double>();
+        public double currentNumber;
+        public double tempNumber1 = 0;
+        public double iterationLimit = 75;
+        public int shiftInput;
+        public string anotherSequence = "y";                   
+        public string newLine = Environment.NewLine;
+        public void newSequence()
         {
-            fibs1.Add(shift);
-            fibs1.Add(0);        
+            while (anotherSequence.Equals("y"))
+            {
+                fibbonacciSequence = new List<double>();
+                Console.WriteLine("Please enter a shift(number 1 - 10,000) to apply to the Fibbonacci Sequence.");
+                shiftInput = int.Parse(Console.ReadLine());
+                Console.WriteLine();
+                calculateSequence(shiftInput);
+                displaySequence();
+                Console.WriteLine(newLine + "Would you like to calculate another fibbonacci sequence? (Y/N)" + newLine);
+                anotherSequence = Console.ReadLine();
+                anotherSequence = anotherSequence.ToLower();
+                anotherSequence = anotherSequence.Trim();
+            }
+        }
+
+        public void calculateSequence(double shift)
+        {
+            fibbonacciSequence.Add(shift);
+            fibbonacciSequence.Add(0);        
             currentNumber = shift;
-            fibs1.Add(currentNumber);
+            fibbonacciSequence.Add(currentNumber);
             for (int nextNum = 0; nextNum < iterationLimit; nextNum += 1)
             {
                 tempNumber1 = currentNumber * 2;
-                tempNumber1 -= fibs1[nextNum];
-                fibs1.Add(tempNumber1);
+                tempNumber1 -= fibbonacciSequence[nextNum];
+                fibbonacciSequence.Add(tempNumber1);
                 currentNumber = tempNumber1;
             }
         }
-        public void printFibbbbb()
+        public void displaySequence()
         {
-            foreach (double fib in fibs1)
+            fibbonacciSequence.RemoveRange(0,2);
+            foreach (double digit in fibbonacciSequence)
             {
-                Console.WriteLine(fib);
+                Console.Write(digit + ", ");
             }                 
         }
     }
