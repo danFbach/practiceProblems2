@@ -16,8 +16,11 @@ namespace practiceProblems2
             //shapeMaker makeShape = new shapeMaker();
             //makeShape.drawTriangles();
 
-            fibbonacci run = new fibbonacci();
-            run.newSequence();
+            //fibbonacci run = new fibbonacci();
+            //run.newSequence();
+
+            construction firefox1 = new construction();
+            Console.ReadKey();  
         }
     }
 }
