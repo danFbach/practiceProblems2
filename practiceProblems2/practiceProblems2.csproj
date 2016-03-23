@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="construction.cs" />
     <Compile Include="fibbonacci.cs" />
-    <Compile Include="firefox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="shapeMaker.cs" />

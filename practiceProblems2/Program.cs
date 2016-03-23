@@ -19,8 +19,7 @@ namespace practiceProblems2
             //fibbonacci run = new fibbonacci();
             //run.newSequence();
 
-            construction firefox1 = new construction();
-            Console.ReadKey();  
+            construction firefox1 = new construction(); 
         }
     }
 }
