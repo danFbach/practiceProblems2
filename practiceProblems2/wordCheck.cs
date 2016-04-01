@@ -25,7 +25,7 @@ namespace practiceProblems2
                 if (userInput == word)
                 {
                     Console.WriteLine("BARK!");
-                    Console.WriteLine("Would you like to contine checking words? (y/N)");
+                    Console.WriteLine("Would you like to continue checking words? (Y/N)");
                     proceed = Console.ReadLine();
                     proceed = proceed.ToLower();
                 }           

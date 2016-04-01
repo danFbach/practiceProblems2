@@ -12,8 +12,6 @@ namespace practiceProblems2
         string firefoxDirectory = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe";
         string firstVideo = @"https://www.youtube.com/watch?v=hl_9_q_uLF8";
         string secondVideo = @"https://youtu.be/JwXohnAYyuc?t=22s";
-
-
         public void launchFirefox(string url)
         {
             ProcessStartInfo openBrowser = new ProcessStartInfo();

@@ -11,8 +11,8 @@ namespace practiceProblems2
         public List<double> fibbonacciSequence = new List<double>();
         public double currentNumber;
         public double tempNumber1 = 0;
-        public double iterationLimit = 75;
-        public int shiftInput;
+        public double iterationLimit = 25;
+        public double shiftInput;
         public string anotherSequence = "y";                   
         public string newLine = Environment.NewLine;
         public void newSequence()
@@ -21,7 +21,7 @@ namespace practiceProblems2
             {
                 fibbonacciSequence = new List<double>();
                 Console.WriteLine("Please enter a shift(number 1 - 10,000) to apply to the Fibbonacci Sequence.");
-                shiftInput = int.Parse(Console.ReadLine());
+                shiftInput = double.Parse(Console.ReadLine());
                 Console.WriteLine();
                 calculateSequence(shiftInput);
                 displaySequence();

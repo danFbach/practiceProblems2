@@ -13,13 +13,13 @@ namespace practiceProblems2
             //wordCheck checkStart = new wordCheck();
             //checkStart.initiateWordCheck();
 
-            shapeMaker makeShape = new shapeMaker();
-            makeShape.drawTriangles();
+            //shapeMaker makeShape = new shapeMaker();
+            //makeShape.drawTriangles();
 
-            //fibbonacci run = new fibbonacci();
-            //run.newSequence();
+            fibbonacci run = new fibbonacci();
+            run.newSequence();
 
-            construction firefox1 = new construction(); 
+            //construction firefox1 = new construction();
         }
     }
 }
